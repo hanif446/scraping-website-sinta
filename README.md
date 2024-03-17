@@ -1,9 +1,10 @@
 # scraping-website-sinta
+
 #!/bin/bash
 # Login
 sudo su
 # Install upgrade
-apt update
+apt update <br>
 apt upgrade -y
 
 # Install Google Chrome
