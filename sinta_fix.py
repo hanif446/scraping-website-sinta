@@ -375,7 +375,7 @@ def get_profile_data():
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     # Login ke Sinta
-    login_sinta(driver, "alam@unsil.ac.id", "R4M451NTA")
+    login_sinta(driver, "USERNAME", "PASSWORD")
 
     # Lakukan scraping dan dapatkan data
     scraped_data_profile = scrape_data_profile(driver, profile_urls)
@@ -390,7 +390,7 @@ def get_article_scopus_data():
     # Initialize the WebDriver
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    login_sinta(driver, "alam@unsil.ac.id", "R4M451NTA")
+    login_sinta(driver, "USERNAME", "PASSWORD")
 
     scraped_data_article_scopus = scrape_data_article_scopus(driver, article_urls)
 
@@ -405,7 +405,7 @@ def get_article_wos_data():
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     # Login ke Sinta
-    login_sinta(driver, "alam@unsil.ac.id", "R4M451NTA")
+    login_sinta(driver, "USERNAME", "PASSWORD")
 
     # Lakukan scraping dan dapatkan data
     scraped_data_article_wos = scrape_data_article_wos(driver, article_urls)
@@ -421,7 +421,7 @@ def get_article_garuda_data():
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     # Login ke Sinta
-    login_sinta(driver, "alam@unsil.ac.id", "R4M451NTA")
+    login_sinta(driver, "USERNAME", "PASSWORD")
 
     # Lakukan scraping dan dapatkan data
     scraped_data_article_garuda = scrape_data_article_garuda(driver, article_urls)
@@ -437,7 +437,7 @@ def get_article_google_scholar_data():
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     # Login ke Sinta
-    login_sinta(driver, "alam@unsil.ac.id", "R4M451NTA")
+    login_sinta(driver, "USERNAME", "PASSWORD")
 
     # Lakukan scraping dan dapatkan data
     scraped_data_article_google_scholar = scrape_data_article_google_scholar(driver, article_urls)
